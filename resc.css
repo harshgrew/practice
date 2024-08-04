@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ .box{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin: auto;
+}
+
+@media only screen and (max-width:1217px){
+    .box{
+        background-color: greenyellow;
+    }
+
+    .container{
+        flex-wrap:wrap;
+    }
+}
+@media only screen and (max-width:570px){
+    body{
+        text-align: center;
+        font-family: 'Gill Sans','Trebuchet MS', sans-serif;
+    }
+}
